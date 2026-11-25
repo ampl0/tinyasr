@@ -60,6 +60,7 @@ pick `*.tzf` files plus `silero_vad.onnx`.
 | [`docs/FORENSIC.md`](docs/FORENSIC.md) | How Telegram's on-device transcription was reverse-engineered, step by step |
 | [`docs/MODELS.md`](docs/MODELS.md) | Engine and pack reference: sizes, SHA-256, TZF container, architecture |
 | [`docs/AGENT_GUIDE.md`](docs/AGENT_GUIDE.md) | Checklist to reproduce all of this on a future Telegram version |
+| [`docs/LIVE_VERIFICATION.md`](docs/LIVE_VERIFICATION.md) | Local verification of streaming mode, and how to tell silence from a language mismatch |
 | [`docs/download_models.py`](docs/download_models.py) | Fetch the packs from Telegram over MTProto |
 
 ## How it works
