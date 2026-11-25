@@ -6,7 +6,9 @@
 
 Captions while you speak · transcribe any audio file · be the phone's dictation engine
 
-[![build](https://github.com/ampl0/tinyasr/actions/workflows/build.yml/badge.svg)](../../actions/workflows/build.yml)
+[![build](https://github.com/ampl0/tinyasr/actions/workflows/build.yml/badge.svg)](https://github.com/ampl0/tinyasr/actions/workflows/build.yml)
+[![release](https://img.shields.io/github/v/release/ampl0/tinyasr?label=release&color=2a6fdb)](https://github.com/ampl0/tinyasr/releases/latest)
+[![downloads](https://img.shields.io/github/downloads/ampl0/tinyasr/total?color=2a6fdb)](https://github.com/ampl0/tinyasr/releases)
 ![platform](https://img.shields.io/badge/platform-Android%2023%2B%20arm64-3ddc84)
 ![engine](https://img.shields.io/badge/engine-tinyasr%20(Zipformer%20RNN--T)-b45)
 ![license](https://img.shields.io/badge/engine%20license-GPL--3.0-blue)
@@ -18,7 +20,7 @@ Captions while you speak · transcribe any audio file · be the phone's dictatio
 
 ## Download
 
-Grab a signed APK from [**Releases**](../../releases/latest):
+Grab a signed APK from [**Releases**](https://github.com/ampl0/tinyasr/releases/latest):
 
 | Build | Size | Models | For |
 |---|---|---|---|
@@ -105,7 +107,7 @@ guarded by `scripts/check-layout.sh` and Android Lint (0 errors) in CI —
 
 ## Getting the models
 
-Ready-made packs are attached to [Releases](../../releases/latest). To fetch
+Ready-made packs are attached to [Releases](https://github.com/ampl0/tinyasr/releases/latest). To fetch
 them yourself, with your own Telegram account:
 
 ```bash
