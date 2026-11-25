@@ -1,0 +1,19 @@
+# Everything the app builds or downloads.
+local.properties
+.gradle/
+build/
+app/build/
+app/.cxx/
+*.iml
+.idea/
+.DS_Store
+
+# Model packs: large, and fetched with docs/download_models.py or imported in
+# the app. The "full" flavor's assets are staged by scripts/build-engine.sh.
+app/src/full/assets/models/*.tzf
+app/src/full/assets/models/*.onnx
+
+# Credentials and sessions must never be committed.
+*.session
+*.session-journal
+.env

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Brand mark: a level meter inside a speech bubble. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- rounded speech bubble -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,14 H84 A10,10 0 0 1 94,24 V70 A10,10 0 0 1 84,80 H60 L44,94 V80 H24 A10,10 0 0 1 14,70 V24 A10,10 0 0 1 24,14 Z" />
+
+    <!-- level meter -->
+    <path
+        android:fillColor="#2A6FDB"
+        android:pathData="M34,36 h8 a4,4 0 0 1 4,4 v24 a4,4 0 0 1 -4,4 h-8 a4,4 0 0 1 -4,-4 V40 a4,4 0 0 1 4,-4 Z" />
+    <path
+        android:fillColor="#2A6FDB"
+        android:pathData="M50,28 h8 a4,4 0 0 1 4,4 v32 a4,4 0 0 1 -4,4 h-8 a4,4 0 0 1 -4,-4 V32 a4,4 0 0 1 4,-4 Z" />
+    <path
+        android:fillColor="#2A6FDB"
+        android:pathData="M66,42 h8 a4,4 0 0 1 4,4 v18 a4,4 0 0 1 -4,4 h-8 a4,4 0 0 1 -4,-4 V46 a4,4 0 0 1 4,-4 Z" />
+</vector>

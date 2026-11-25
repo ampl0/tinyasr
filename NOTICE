@@ -1,0 +1,26 @@
+# tinyasr bundles one thing that is not ours:
+
+1. The engine, built from https://github.com/dkaraush/tinyasr
+   (GPL-3.0-or-later). scripts/build-engine.sh fetches the pinned revision,
+   compiles it for Android arm64 and stages:
+
+     - app/src/main/cpp/prebuilt/arm64-v8a/libtinyasr.a  (the static library)
+     - third_party/tinyasr/                              (source + header)
+     - app/src/full/assets/models/*                      (only for the "full" flavor)
+
+   The repository also ships the model packs themselves, so the "full" flavor
+   can bundle them. If you redistribute the app, the GPL applies to the
+   combined work; see third_party/tinyasr/LICENSE.
+
+2. Model packs (en-fa.tzf, en-ru-uk.tzf, silero_vad.onnx) — from the same
+   repository. The "core" flavor ships none: import them yourself.
+
+The old approach — loading Telegram's monolithic libtmessages.49.so — was
+dropped: its JNI_OnLoad resolves methods on Telegram's own Java classes
+(org/telegram/messenger/AnimatedFileDrawableStream and others), which any app
+that does not ship them cannot satisfy. The JNI lookup then fails fatally the
+moment the library is loaded, which is exactly what "crash while transcribing"
+was: the process died in System.loadLibrary, before a single byte of a model
+was parsed. See docs/FORENSIC.md.
+
+The app code (dev.tinyasr.app) is provided as-is for personal experimentation.

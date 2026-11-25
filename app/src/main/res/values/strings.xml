@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">tinyasr</string>
+    <string name="app_tagline">Offline speech recognition, on device</string>
+
+    <!-- sections -->
+    <string name="section_models">Models</string>
+    <string name="section_transcribe">Transcribe</string>
+    <string name="label_language">Language</string>
+
+    <!-- actions -->
+    <string name="audio_file">Audio file</string>
+    <string name="record">Record</string>
+    <string name="stop_recording">Stop</string>
+    <string name="live">Live</string>
+    <string name="stop_live">Stop live</string>
+    <string name="import_models">Import models</string>
+    <string name="save_text">Save text</string>
+    <string name="share">Share</string>
+    <string name="copy_text">Copy text</string>
+    <string name="use_as_stt">Use as phone speech engine</string>
+    <string name="remove_models">Remove models</string>
+    <string name="remove_models_message">Deletes the installed packs and silero_vad.onnx from the app folder.</string>
+    <string name="copy_log">Copy log</string>
+    <string name="enable_models">Enable models</string>
+    <string name="remove">Remove</string>
+
+    <!-- empty / progress -->
+    <string name="loading_pack">Loading %1$s…</string>
+    <string name="importing">Importing %1$d file(s)…</string>
+    <string name="empty_state">Your transcript will appear here.</string>
+    <string name="copying_audio">Copying audio…</string>
+    <string name="transcribing">Transcribing…</string>
+    <string name="recording">Recording…</string>
+    <string name="recording_empty">the recording was empty</string>
+    <string name="live_starting">Starting live…</string>
+    <string name="live_running">live — %1$s</string>
+    <string name="live_detecting">detecting</string>
+    <string name="live_silent">live — heard nothing yet</string>
+    <string name="meta_live">live session</string>
+    <string name="meta_file">%1$s · decode %2$d ms · transcribe %3$d ms</string>
+    <string name="meta_local">processed on this device · nothing was uploaded</string>
+
+    <!-- status -->
+    <string name="preparing">Preparing…</string>
+    <string name="status_done">Done</string>
+    <string name="status_nothing">Nothing recognized — check the language and that the audio contains speech</string>
+    <string name="status_no_packs">No packs installed — tap Import models</string>
+    <string name="status_no_models">No models — import a .tzf pack and silero_vad.onnx</string>
+    <string name="status_no_vad">silero_vad.onnx is missing — the engine needs it</string>
+    <string name="safe_mode_status">The engine crashed twice, so models are disabled. Remove them, or tap Enable models.</string>
+    <string name="crashed_before">The previous run ended during %1$s.</string>
+    <string name="models_enabled">Models enabled — the pack loads on first use</string>
+    <string name="models_removed">Models removed</string>
+    <string name="error_prefix">Error: %1$s</string>
+    <string name="mic_denied">Microphone permission denied</string>
+    <string name="err_no_pack">No model pack installed</string>
+    <string name="err_safe_mode">Models are disabled after a crash — remove them or tap Enable models</string>
+    <string name="err_session">The engine could not start the recognizer</string>
+
+    <!-- results -->
+    <string name="copied">Copied to the clipboard</string>
+    <string name="log_copied">Log copied to the clipboard</string>
+    <string name="saved">Saved</string>
+    <string name="imported">Imported %1$d file(s)</string>
+    <string name="nothing_to_save">Nothing to save</string>
+    <string name="nothing_to_share">Nothing to share</string>
+    <string name="share_transcript">Share transcript</string>
+
+    <!-- explainer -->
+    <string name="how_it_works">How it works</string>
+    <string name="about_text">
+        <b>Audio file</b> — pick any file the phone can decode (m4a, mp3, ogg, wav, flac…).\n
+        <b>Record</b> — capture a note, then transcribe it in full context.\n
+        <b>Live</b> — captions as you speak; final words stay, the rest is replaced as it settles.\n
+        <b>Share audio</b> — send an audio file to tinyasr from any app.\n
+        <b>Phone speech engine</b> — select tinyasr in Settings → System → Languages → Speech, and every app that dictates uses it offline.\n\n
+        Audio and text never leave this device. Models live in the app\'s private folder and survive updates.
+    </string>
+    <string name="stt_hint">Choose tinyasr in the list. Being installed is not enough — it has to be selected.</string>
+    <string name="stt_manual">Open Settings → System → Languages → Speech and choose tinyasr</string>
+</resources>
