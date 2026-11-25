@@ -107,13 +107,18 @@ guarded by `scripts/check-layout.sh` and Android Lint (0 errors) in CI —
 
 ## Getting the models
 
-Ready-made packs are attached to [Releases](https://github.com/ampl0/tinyasr/releases/latest). To fetch
-them yourself, with your own Telegram account:
+Every pack Telegram currently serves is attached to
+[**Releases**](https://github.com/ampl0/tinyasr/releases/latest) — `en`, `es`,
+`fa`, `uz`, `km`, plus `silero_vad.onnx` and `tinylid.bin`. A `core` install
+needs just one `*.tzf` and `silero_vad.onnx`.
+
+To fetch them yourself, with your own Telegram account:
 
 ```bash
 export TG_API_ID=12345 TG_API_HASH=...      # https://my.telegram.org
-python3 docs/download_models.py --list
-python3 docs/download_models.py --lang en,fa
+python3 docs/download_models.py --list                       # catalogue + sizes
+python3 docs/download_models.py --lang en,fa,uz,km,es        # download
+python3 docs/download_models.py --lang tinylid,silero-vad    # VAD + language ID
 ```
 
 Verify against the SHA-256 values in [`docs/MODELS.md`](docs/MODELS.md).

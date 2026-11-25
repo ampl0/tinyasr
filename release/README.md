@@ -14,11 +14,18 @@ release/checksums.txt      # SHA-256 of every published file (generated)
 |---|---|
 | `tinyasr-core-debug.apk` | engine only; import packs yourself |
 | `tinyasr-full-debug.apk` | engine + `en-fa`, `en-ru-uk`, `silero_vad.onnx` |
-| `en-fa.tzf`, `en-ru-uk.tzf` | uncompressed packs, for `core` users |
+| `en.tzf` (`en-ru-uk`) | en, ru, uk |
+| `es.tzf` (`en-es-it-pt`) | en, es, it, pt |
+| `fa.tzf` (`en-fa`) | en, fa |
+| `uz.tzf` (`en-ru-uz`) | en, ru, uz |
+| `km.tzf` (`en-km`) | en, km |
 | `silero_vad.onnx` | required by the engine |
+| `tinylid.bin` | optional, Telegram's language ID |
 | `checksums.txt` | SHA-256 of the files above |
 
-Pack sizes and hashes are documented in [`docs/MODELS.md`](../docs/MODELS.md).
+Every language pack carries English as its first language, so a `core` install
+needs only one `*.tzf` plus `silero_vad.onnx` to be useful. Pack sizes and
+hashes are documented in [`docs/MODELS.md`](../docs/MODELS.md).
 
 ## A note on the packs
 
